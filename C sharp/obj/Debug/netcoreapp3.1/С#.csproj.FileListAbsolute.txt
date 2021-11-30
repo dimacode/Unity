@@ -1,0 +1,13 @@
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#.deps.json
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#.runtimeconfig.json
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#.runtimeconfig.dev.json
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#.dll
+/home/dev/Projects/С#/bin/Debug/netcoreapp3.1/С#.pdb
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.csprojAssemblyReference.cache
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.AssemblyInfoInputs.cache
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.AssemblyInfo.cs
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.csproj.CoreCompileInputs.cache
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.dll
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.pdb
+/home/dev/Projects/С#/obj/Debug/netcoreapp3.1/С#.genruntimeconfig.cache
