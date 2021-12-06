@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525033684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.47864, y: 0.97611785, z: -0.99919784}
+  m_LocalPosition: {x: 3.47864, y: -0.58, z: 1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 705507995}
@@ -171,6 +171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7db9e1e2ccbb5b0bbfeda36fb9399f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CountWave: 0
+  CurWave: 0
+  GameUnits: []
   Waves:
   - Name: "\u0412\u043E\u043B\u043D\u0430 - 1"
     Units:
@@ -184,6 +187,10 @@ MonoBehaviour:
   - Name: "\u0412\u043E\u043B\u043D\u0430 - 3"
     Units:
     - {fileID: 1327209791292583183, guid: db6356f93d83c2bc282ad842f96d5a9f, type: 3}
+  Areas:
+  - {fileID: 995236689}
+  - {fileID: 646582732}
+  - {fileID: 1797050304}
 --- !u!1 &646582732
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -11.47, y: 5.07, z: 2.22}
+  m_LocalPosition: {x: -11.39, y: 5.07, z: 2.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 525033685}
