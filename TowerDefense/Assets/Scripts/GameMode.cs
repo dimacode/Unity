@@ -31,9 +31,7 @@ public class GameMode : MonoBehaviour
                 if (timeUnit <= 0.0f) {
                     if (key <= Waves[CurWave].Units.Count - 1) {
                         UnityEngine.Debug.Log("Spawn unit");
-
                         GameUnits.Add((GameObject)Instantiate(Waves[CurWave].Units[key], Areas[0].transform.position, Quaternion.identity));
-
                         key++;
                         timeUnit = 1.0f;
                     } else {
