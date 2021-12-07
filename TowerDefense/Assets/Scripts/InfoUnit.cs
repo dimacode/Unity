@@ -25,7 +25,7 @@ public class InfoUnit : MonoBehaviour
                     transform.position = Vector3.MoveTowards(transform.position, gameMode.Areas[key].transform.position, Value.Speed * Time.deltaTime);
                     // Используем Vector3.MoveTowards метод, который принимает
                     // Текущую позицию юнита (transform.position)
-                    // Позицию точки куда двигатся (gameMode.Areas[key].transform.position)
+                    // Позицию точки куда двигатся (gameMode.Areas[key].transform.position) 
                     // Скорость передвижения (Value.Speed * Time.deltaTime)
 
                 } else {
