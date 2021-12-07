@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameMode : MonoBehaviour
 {
+    public int Diamonds;
+    public int LosesUnits;
     public int CountWave;
     public int CurWave;
     
