@@ -33,11 +33,22 @@ public class InfoUnit : MonoBehaviour
                 }
 
             } else {
-                move = false;
+                move = false; 
             }
 
         } else {
+            gameMode.LosesUnits++;
+            
+            gameMode.GameUnits.Remove(transform.gameObject);
+            Destroy(transform.gameObject);
+            
+        }
 
+        if (Value.Health <= 0) {
+            gameMode.Diamonds += Value.Diamonds;
+            
+            gameMode.GameUnits.Remove(transform.gameObject);
+            Destroy(transform.gameObject);
         }
     }
 }

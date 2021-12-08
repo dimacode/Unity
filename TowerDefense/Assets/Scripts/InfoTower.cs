@@ -23,26 +23,29 @@ public class InfoTower : MonoBehaviour
     {
         if (attack) {
 
-            if (Vector3.Distance(transform.position, target.transform.position) <= TowerValues.Range) {
+            if (target != null) {
+                if (Vector3.Distance(transform.position, target.transform.position) <= TowerValues.Range) {
 
-                if (reloads <= 0.0f) {
+                    if (reloads <= 0.0f) {
 
-                    bullet = (GameObject)Instantiate(TowerValues.BulletPref, TowerValues.BulletSpawn.transform.position, Quaternion.identity);
-                    bullet.GetComponent<Bullet>().Target = target;
-                    bullet.GetComponent<Bullet>().Damage = TowerValues.Damage;
-                    bullet.GetComponent<Bullet>().Speed = TowerValues.bltSpeed;
-                    
-                    reloads = TowerValues.atkSpeed;
+                        bullet = (GameObject)Instantiate(TowerValues.BulletPref, TowerValues.BulletSpawn.transform.position, Quaternion.identity);
+                        bullet.GetComponent<Bullet>().Target = target;
+                        bullet.GetComponent<Bullet>().Damage = TowerValues.Damage;
+                        bullet.GetComponent<Bullet>().Speed = TowerValues.bltSpeed;
+                        
+                        reloads = TowerValues.atkSpeed;
 
+                    } else {
+                        reloads -= Time.deltaTime;
+                    }
                 } else {
-                    reloads -= Time.deltaTime;
+                    attack = false;
                 }
             } else {
                 attack = false;
             }
-
-
             
+
 
         } else {
 

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 54c521d441ac97376be632673e74163d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Diamonds: 5
-  LosesUnits: 1
+  LosesUnits: 0
   CountWave: 0
   CurWave: 0
   GameUnits: []
@@ -1127,7 +1127,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 0604040f932044e18b530f4819843afb, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1344,7 +1344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -758518673462619480, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: TowerValues.atkSpeed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -758518673462619480, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: TowerValues.bltSpeed
@@ -1368,15 +1368,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1084411346016105806, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.45
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 1084411346016105806, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6169169
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1084411346016105806, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.64
+      value: -1.17
       objectReference: {fileID: 0}
     - target: {fileID: 1084411346016105806, guid: 3edef4cf3a3bb6fc4895d0bf1e6507e8, type: 3}
       propertyPath: m_LocalRotation.w

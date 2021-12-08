@@ -11,13 +11,19 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, Target.transform.position) >= 0.2f) {
+        if (Target != null) {
 
-            transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, Speed * Time.deltaTime);
+            if (Vector3.Distance(transform.position, Target.transform.position) >= 0.2f) {
 
+                transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, Speed * Time.deltaTime);
+
+            } else {
+                Target.GetComponent<InfoUnit>().Value.Health -= Damage;
+                Destroy(transform.gameObject);
+            }
         } else {
-            Target.GetComponent<InfoUnit>().Value.Health -= Damage;
             Destroy(transform.gameObject);
         }
+        
     }
 }
