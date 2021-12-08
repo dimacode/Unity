@@ -226,6 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1274bae8788f2cabab2d06612f2727, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DiamondsIcon: {fileID: 1883389862}
+  DiamondText: {fileID: 1500471637}
+  LosesUnits: {fileID: 141707254}
+  LosesText: {fileID: 867731091}
 --- !u!114 &525033686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,6 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7db9e1e2ccbb5b0bbfeda36fb9399f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Diamonds: 5
+  LosesUnits: 1
   CountWave: 0
   CurWave: 0
   GameUnits: []
