@@ -7,6 +7,7 @@ public class Unit
 {
     public string Name;
     public float Health;
+    public float CurrentHealth;
     public int Armor;
     public float Speed = 0.7f;
     public int Diamonds;

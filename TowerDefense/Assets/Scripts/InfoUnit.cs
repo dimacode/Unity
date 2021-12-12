@@ -8,10 +8,15 @@ public class InfoUnit : MonoBehaviour
 
     private int key = 0; // Будет содержать текущий поинтер
     private bool move = true;
+    private Vector3 screenPos;
+    private Rect backRect, colorRect;
     private GameMode gameMode; // Задаем тип тега который закреплен на елементе GameWorld
+    private GameHUD gameHud;
 
     void Start() {
+        Value.Health = Value.CurrentHealth;
         gameMode = GameObject.FindGameObjectWithTag("GameMode").GetComponent<GameMode>(); // Находим элемент по тегу GameMode
+        gameHud = GameObject.FindGameObjectWithTag("GameMode").GetComponent<GameHUD>();
     }
 
     void Update() {
@@ -44,11 +49,19 @@ public class InfoUnit : MonoBehaviour
             
         }
 
-        if (Value.Health <= 0) {
+        if (Value.CurrentHealth <= 0) {
             gameMode.Diamonds += Value.Diamonds;
             
             gameMode.GameUnits.Remove(transform.gameObject);
             Destroy(transform.gameObject);
         }
     }
+
+    // void OnGUI() {
+    //     screenPos = Camera.main.WorldToScreenPoint(transform.position);
+    //     backRect = new Rect(screenPos.x - 25, Screen.height - (screenPos.y + 20), 50, 10);
+    //     colorRect = new Rect(screenPos.x - 25, Screen.height - (screenPos.y + 20), 50 * (Value.CurrentHealth / Value.Health), 10);
+    //     GUI.DrawTexture(backRect, gameHud.skin.GetStyle("HealthBar").normal.background);
+    //     GUI.DrawTexture(colorRect, gameHud.skin.GetStyle("HealthBar").active.background);
+    // }
 }

@@ -111,6 +111,7 @@ MonoBehaviour:
   Value:
     Name: Unit 1
     Health: 21
+    CurrentHealth: 21
     Armor: 2
     Speed: 0.7
     Diamonds: 1

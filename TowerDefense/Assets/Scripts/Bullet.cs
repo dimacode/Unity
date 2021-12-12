@@ -18,7 +18,7 @@ public class Bullet : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, Target.transform.position, Speed * Time.deltaTime);
 
             } else {
-                Target.GetComponent<InfoUnit>().Value.Health -= Damage;
+                Target.GetComponent<InfoUnit>().Value.CurrentHealth -= Damage;
                 Destroy(transform.gameObject);
             }
         } else {
